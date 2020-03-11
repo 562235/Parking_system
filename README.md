@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## 小区停车场系统
+支持刷RFID卡进出，可充值会员，实时语音播放，实时显示车位，出入场时间，还支持语音搜索车辆信息 2.0版
 
-You can use the [editor on GitHub](https://github.com/562235/Parking_system/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## 使用说明
+1.服务器端在linux QT运行
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+2.出入口端在gec6818开发板上运行
 
-### Markdown
+3一套RFID模块和RFID卡
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+4.一个USB摄像头
 
-```markdown
-Syntax highlighted code block
+5.刷卡同时，会保存当时的摄像头数据，保存为jpg格式
 
-# Header 1
-## Header 2
-### Header 3
+6.进入管理员模式可以修改会员信息和语音搜索车辆信息（说车牌号）
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## 注意事项
+1.因github上传限制，语音转文字，文字转语音需自行配置，推荐使用讯飞，配置好将文字转语音文件夹放在服务器文件夹下(与QT文件.pro同一层)，且文件夹名称应为text_to_talk
 
-**Bold** and _Italic_ and `Code` text
+2.语音转文字，可自行修改代码即：服务器代码中super.cpp中144 147 151行
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/562235/Parking_system/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
